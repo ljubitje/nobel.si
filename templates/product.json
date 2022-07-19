@@ -61,7 +61,7 @@
           "settings": {
             "heading": "Materials",
             "icon": "leather",
-            "content": "",
+            "content": "<p>Ni iz usnja.<\/p>",
             "page": ""
           }
         },
@@ -70,7 +70,7 @@
           "settings": {
             "heading": "Shipping & Returns",
             "icon": "truck",
-            "content": "",
+            "content": "<p>Kuhinja je draga, zato jo zastonj dostavimo in montiramo.<\/p>",
             "page": ""
           }
         },
@@ -79,7 +79,7 @@
           "settings": {
             "heading": "Dimensions",
             "icon": "ruler",
-            "content": "",
+            "content": "<p>20x15m ali manj<\/p>",
             "page": ""
           }
         },
@@ -88,7 +88,7 @@
           "settings": {
             "heading": "Care Instructions",
             "icon": "heart",
-            "content": "",
+            "content": "<p>Umivati samo s krpo in vitrexom.<\/p>",
             "page": ""
           }
         },
