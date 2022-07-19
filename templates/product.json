@@ -27,6 +27,13 @@
           "settings": {
           }
         },
+        "93666b38-c44c-45c0-b351-a41e78b8b606": {
+          "type": "text",
+          "settings": {
+            "text": "Tu je še nekaj podatkov o tem kako kuhinjo zapakiramo, prelakiramo, obrnemo na glavo, in dostavimo.",
+            "text_style": "body"
+          }
+        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
@@ -97,6 +104,7 @@
         "title",
         "caption",
         "price",
+        "93666b38-c44c-45c0-b351-a41e78b8b606",
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
