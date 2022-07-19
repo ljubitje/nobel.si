@@ -187,19 +187,29 @@
             "link_label": "",
             "link": ""
           }
+        },
+        "1199c574-437d-46ca-8790-dacabb91c234": {
+          "type": "column",
+          "settings": {
+            "title": "Darilo - bon",
+            "text": "<p>Ob nakupu kuhinje vam podarimo kupon v vrednosti 50€ za kuhinjske aparate<\/p>",
+            "link_label": "",
+            "link": ""
+          }
         }
       },
       "block_order": [
         "column1",
         "column2",
-        "column3"
+        "column3",
+        "1199c574-437d-46ca-8790-dacabb91c234"
       ],
       "settings": {
         "title": "",
         "heading_size": "h1",
         "image_width": "third",
         "image_ratio": "adapt",
-        "columns_desktop": 3,
+        "columns_desktop": 4,
         "column_alignment": "center",
         "background_style": "none",
         "button_label": "",
