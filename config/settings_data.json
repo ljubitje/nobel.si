@@ -97,6 +97,13 @@
     "predictive_search_show_price": false,
     "favicon": "shopify:\/\/shop_images\/oldFavicon32x32.png",
     "currency_code_enabled": true,
+    "show_vendor": false,
+    "show_cart_note": false,
+    "checkout_logo_image": "shopify:\/\/shop_images\/oldMenuLogo.png",
+    "checkout_logo_size": "large",
+    "checkout_body_background_color": "#222222",
+    "checkout_input_background_color_mode": "white",
+    "checkout_sidebar_background_color": "#f6f6f5",
     "checkout_accent_color": "#f45334",
     "checkout_button_color": "#f45334",
     "sections": {
