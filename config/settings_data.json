@@ -7,7 +7,7 @@
     "gradient_accent_2": "",
     "colors_text": "{{ shop.brand.colors.primary[0].background }}",
     "colors_outline_button_labels": "#ff00ff",
-    "colors_background_1": "{{ shop.brand.colors.secondary[0].background }}",
+    "colors_background_1": "{{ shop.brand.colors.primary[0].foreground }}",
     "gradient_background_1": "",
     "colors_background_2": "#00ff00",
     "gradient_background_2": "",
