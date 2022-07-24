@@ -22,7 +22,7 @@
               <div class="js-contents" {{ block.shopify_attributes }}>
                 <div class="totals">
                   <h2 class="totals__subtotal">{{ 'sections.cart.subtotal' | t }}</h2>
-                  <p class="totals__subtotal-value"><span class='avisplus-cart-total'>{{ cart.total_price | money_with_currency }}</span></p>
+                  <p class="totals__subtotal-value"><span class='avisplus-cart-total'><span  class='ymq_cart_total_price'>{{ cart.total_price | money_with_currency }}</span></span></p>
                 </div>
 
                 <div>
@@ -120,3 +120,4 @@
   ]
 }
 {% endschema %}
+{% comment %}<!-- ymq option done -->{% endcomment %}
