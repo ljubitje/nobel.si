@@ -90,18 +90,18 @@
                           {{ 'products.product.price.regular_price' | t }}
                         </span>
                         <s class="cart-item__old-price product-option">
-                          {{- item.original_price | money -}}
+                          <span class='avisplus-cart-original-hide'>{{- item.original_price | money -}}</span>
                         </s>
                         <span class="visually-hidden">
                           {{ 'products.product.price.sale_price' | t }}
                         </span>
                         <strong class="cart-item__final-price product-option">
-                          {{ item.final_price | money }}
+                          <span class='avisplus-cart-item-final-price' data-key='{{item.key}}'>{{ item.final_price | money }}</span>
                         </strong>
                       </div>
                     {%- else -%}
                       <div class="product-option">
-                        {{ item.original_price | money }}
+                        <span class='avisplus-cart-item-original-price' data-key='{{item.key}}'>{{ item.original_price | money }}</span>
                       </div>
                     {%- endif -%}
 
@@ -157,26 +157,26 @@
                       </div>
                     </div>
                     <div class="cart-item__price-wrapper">
-                      {%- if item.original_line_price != item.final_line_price -%}
+                      {%- if item.original_line_price != item.final_line_price -%} <span class='avisplus-next-hide'></span>
                         <dl class="cart-item__discounted-prices">
                           <dt class="visually-hidden">
                             {{ 'products.product.price.regular_price' | t }}
                           </dt>
                           <dd>
                             <s class="cart-item__old-price price price--end">
-                              {{ item.original_line_price | money }}
+                              <span class='avisplus-cart-item-line-price' data-key='{{item.key}}'>{{ item.original_line_price | money }}</span>
                             </s>
                           </dd>
                           <dt class="visually-hidden">
                             {{ 'products.product.price.sale_price' | t }}
                           </dt>
                           <dd class="price price--end">
-                            {{ item.final_line_price | money }}
+                            <span class='avisplus-cart-item-final-line-price' data-key='{{item.key}}'>{{ item.final_line_price | money }}</span>
                           </dd>
                         </dl>
                       {%- else -%}
                         <span class="price price--end">
-                          {{ item.original_line_price | money }}
+                          <span class='avisplus-cart-item-line-price' data-key='{{item.key}}'>{{ item.original_line_price | money }}</span>
                         </span>
                       {%- endif -%}
 
@@ -247,26 +247,26 @@
                     </div>
 
                     <div class="cart-item__price-wrapper">
-                      {%- if item.original_line_price != item.final_line_price -%}
+                      {%- if item.original_line_price != item.final_line_price -%} <span class='avisplus-next-hide'></span>
                         <dl class="cart-item__discounted-prices">
                           <dt class="visually-hidden">
                             {{ 'products.product.price.regular_price' | t }}
                           </dt>
                           <dd>
                             <s class="cart-item__old-price price price--end">
-                              {{ item.original_line_price | money }}
+                              <span class='avisplus-cart-item-line-price' data-key='{{item.key}}'>{{ item.original_line_price | money }}</span>
                             </s>
                           </dd>
                           <dt class="visually-hidden">
                             {{ 'products.product.price.sale_price' | t }}
                           </dt>
                           <dd class="price price--end">
-                            {{ item.final_line_price | money }}
+                            <span class='avisplus-cart-item-final-line-price' data-key='{{item.key}}'>{{ item.final_line_price | money }}</span>
                           </dd>
                         </dl>
                       {%- else -%}
                         <span class="price price--end">
-                          {{ item.original_line_price | money }}
+                          <span class='avisplus-cart-item-line-price' data-key='{{item.key}}'>{{ item.original_line_price | money }}</span>
                         </span>
                       {%- endif -%}
 
