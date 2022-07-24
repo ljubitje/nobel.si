@@ -226,15 +226,15 @@
         "settings": {
         }
       },
-      "3720565183479497137": {
-        "type": "shopify:\/\/apps\/product-options-variant-option\/blocks\/app-embed-block\/fdc9fad5-1a0f-4bd4-9c8a-1af6a6eef6b8",
-        "disabled": false,
+      "5294968793578418440": {
+        "type": "shopify:\/\/apps\/variant-option-product-options\/blocks\/app-embed\/ce104259-52b1-4720-9ecf-76b34cae0401",
+        "disabled": true,
         "settings": {
         }
       },
-      "5294968793578418440": {
-        "type": "shopify:\/\/apps\/variant-option-product-options\/blocks\/app-embed\/ce104259-52b1-4720-9ecf-76b34cae0401",
-        "disabled": false,
+      "3720565183479497137": {
+        "type": "shopify:\/\/apps\/product-options-variant-option\/blocks\/app-embed-block\/fdc9fad5-1a0f-4bd4-9c8a-1af6a6eef6b8",
+        "disabled": true,
         "settings": {
         }
       }
