@@ -240,12 +240,16 @@
                 {{ form | payment_terms }}
               {%- endform -%}
             </div>
+
+          {% comment %} TO JE DEFAULT LOKACIJA DESCRIPTIONA PRODUCTA
           {%- when 'description' -%}
             {%- if product.description != blank -%}
               <div class="product__description rte quick-add-hidden">
                 {{ product.description }}
               </div>
             {%- endif -%}
+          {% endcomment %}
+            
           {%- when 'custom_liquid' -%}
             {{ block.settings.custom_liquid }}
           {%- when 'collapsible_tab' -%}
