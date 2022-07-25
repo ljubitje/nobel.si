@@ -270,3 +270,23 @@
     {%- endif -%}
   </body>
 </html>
+
+
+
+
+
+
+
+@media (min-width: 1140px) {
+    .Product__Gallery {
+        display: flex !important;
+        flex-direction: row-reverse !important;
+    }
+    .Product__Gallery .Product__SlideshowNav--thumbnails {
+        max-width: 100px !important;
+    }
+    .Product__Gallery .Product__Slideshow {
+        width: calc(100% - 100px) !important;
+        flex: 1 !important;
+    }
+}
