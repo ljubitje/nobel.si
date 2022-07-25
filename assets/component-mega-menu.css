@@ -91,3 +91,10 @@
 .mega-menu__list--condensed .mega-menu__link {
   font-weight: normal;
 }
+
+
+/* OPEN SUBMENU ON HOVER */
+.site-nav--has-dropdown:hover .site-nav__dropdown, 
+.site-nav--has-dropdown:focus .site-nav__dropdown { 
+  display: block; 
+} 
