@@ -563,15 +563,6 @@
     </script>
     <script src="{{ 'product-model.js' | asset_url }}" defer></script>
   {%- endif -%}
-
-{% comment %} TO JE DESCRIPTION PRODUCTA PREMAKNJEN POD SLIKO {% endcomment %}
-{% comment %} NE VEM KAJ TO NRDI, BLO JE TU, AMPAK CE NE DAM V COMMENT, SE BREAKA {%- when 'description' -%} {% endcomment %}
-  {%- if product.description != blank -%}
-    <div class="product__description rte quick-add-hidden">
-      {{ product.description }}
-    </div>
-  {%- endif -%}
-
             
   <script>
     document.addEventListener('DOMContentLoaded', function() {
