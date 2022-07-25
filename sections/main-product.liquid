@@ -242,14 +242,14 @@
             </div>
 
             
-          {% comment %} TO JE DEFAULT LOKACIJA DESCRIPTIONA PRODUCTA
+          {% comment %} TO JE DEFAULT LOKACIJA DESCRIPTIONA PRODUCTA          {% endcomment %}
+
           {%- when 'description' -%}
             {%- if product.description != blank -%}
               <div class="product__description rte quick-add-hidden">
                 {{ product.description }}
               </div>
             {%- endif -%}
-          {% endcomment %}
 
             
           {%- when 'custom_liquid' -%}
