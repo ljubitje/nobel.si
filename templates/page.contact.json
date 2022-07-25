@@ -1,1 +1,56 @@
-{"sections":{"main":{"type":"main-page","settings":{"padding_top":36,"padding_bottom":36}},"form":{"type":"contact-form","settings":{"heading":"","heading_size":"h1","color_scheme":"background-1","padding_top":36,"padding_bottom":36}}},"order":["main","form"]}
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "165877737899eaf5dd": {
+      "type": "rich-text",
+      "blocks": {
+        "1658777378e714d289-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>070555544 nobel@kle.si<\/p>",
+            "heading_size": "h1"
+          }
+        },
+        "1658777378e714d289-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Dosegljivi smo vse dni v letu, razen kadar gremo na morje.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1658777378e714d289-0",
+        "1658777378e714d289-1"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "form": {
+      "type": "contact-form",
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "color_scheme": "background-1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "165877737899eaf5dd",
+    "form"
+  ]
+}
