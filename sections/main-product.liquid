@@ -241,6 +241,7 @@
               {%- endform -%}
             </div>
 
+            
           {% comment %} TO JE DEFAULT LOKACIJA DESCRIPTIONA PRODUCTA
           {%- when 'description' -%}
             {%- if product.description != blank -%}
@@ -249,6 +250,7 @@
               </div>
             {%- endif -%}
           {% endcomment %}
+
             
           {%- when 'custom_liquid' -%}
             {{ block.settings.custom_liquid }}
