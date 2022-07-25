@@ -2915,11 +2915,3 @@ details-disclosure > details {
     width: 100%;
   }
 }
-
-
-
-
-
-/* ATTEMPT: MAKE THUMBNAILS SQUARE */
-.product-single__thumbnail-image {width: 90px; height: 90px;}
-
