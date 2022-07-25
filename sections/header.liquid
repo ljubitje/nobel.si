@@ -739,8 +739,8 @@
   </script>
 {%- endif -%}
 
-<!-- Added Hover Effect -->
         
+<!-- NINA PROGRAMINA Added Hover Effect -->        
 <script>
   let items = document.querySelector(".header__inline-menu").querySelectorAll("details");
   console.log(items)
@@ -750,11 +750,10 @@
       item.querySelector("ul").addEventListener("mouseleave", () => {
         item.removeAttribute("open");
       });
-    item.addEventListener("mouseleave", () => {
-      item.removeAttribute("open");
-    });
-  });
-  
+      item.addEventListener("mouseleave", () => {
+        item.removeAttribute("open");
+      });
+    });  
   });
 </script>
 
