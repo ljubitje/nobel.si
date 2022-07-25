@@ -610,7 +610,22 @@
     constructor() {
       super();
     }
-
+                    
+  let items = document.querySelector(".header__inline-menu").querySelectorAll("details");
+  console.log(items)
+  items.forEach(item => {
+    item.addEventListener("mouseover", () => {
+      item.setAttribute("open", true);
+      item.querySelector("ul").addEventListener("mouseleave", () => {
+        item.removeAttribute("open");
+      });
+    item.addEventListener("mouseleave", () => {
+      item.removeAttribute("open");
+    });
+  });
+  
+  });
+                    
     connectedCallback() {
       this.header = document.getElementById('shopify-section-header');
       this.headerBounds = {};
@@ -736,6 +751,8 @@
     }
   </script>
 {%- endif -%}
+
+
 
 {% schema %}
 {
