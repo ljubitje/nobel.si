@@ -2915,3 +2915,10 @@ details-disclosure > details {
     width: 100%;
   }
 }
+
+
+
+
+/* Start */
+.grid-view-item__image-wrapper, .grid-view-item__image-wrapper .grid-view-item__image { max-width: 100% !important; max-height: 100% !important; }
+/* End*/
