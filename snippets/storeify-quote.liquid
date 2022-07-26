@@ -1,0 +1,19 @@
+{% assign lable_btn = "Request a quote" %}
+		{% if shop.metafields.storeifyquote %}
+			{% assign locale_current = shop.locale %}
+			{% assign quote_lang = shop.metafields.storeifyquote.quote_lang %}
+			{% if  quote_lang contains locale_current %}
+				{% assign lable_btn = quote_lang[locale_current].call_for_price  %}
+			{% else %}
+			    {% assign lable_btn = quote_lang.default.call_for_price  %}
+			{% endif %}
+		{% endif %}
+	    <div class="ify-hide ify-quote-group ify-quote-group-{{product.id}}" data-targetid="{{product.id}}" data-targethandle="{{product.handle}}">
+<button type="button" class="storeify-quote-btn-trigger-popup btn button button--primary ify-button-code" data-product="{{ product.handle }}" data-id="1675" data-target="#storeify-light-modal-1675">{{ lable_btn }}</button>
+{% assign productCollections = product.collections | map:'id' %}
+<script id="ify_script_item_{{product.id}}">
+	storeifyRequestaquote.productdata = storeifyRequestaquote.productdata || {};
+	storeifyRequestaquote.productdata['{{product.id}}'] = {"id":{{ product.id }},"title":`{{ product.title }}`,"handle":"{{ product.handle }}","available":{{ product.available }},"vendor":"{{ product.vendor }}","type":"{{ product.type }}","tags":{{ product.tags | json }},"price":{{ product.price }}};
+	storeifyRequestaquote.collections['{{product.id}}'] = {{ productCollections | json }};
+</script>
+</div>
