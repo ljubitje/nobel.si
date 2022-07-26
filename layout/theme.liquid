@@ -216,7 +216,8 @@
       document.documentElement.classList.add('shopify-design-mode');
     }
     </script>
-  </head>
+  {{ 'storeifyapps-formbuilder-styles.css' | asset_url | stylesheet_tag }}
+</head>
 
   <body class="gradient">
     <a class="skip-to-content-link button visually-hidden" href="#MainContent">
@@ -272,7 +273,8 @@
     {%- if settings.predictive_search_enabled -%}
       <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
-  </body>
+  {{ 'storeifyapps-formbuilder-script.js' | asset_url | script_tag }}
+</body>
 </html>
 
 
