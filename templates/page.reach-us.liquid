@@ -1,0 +1,181 @@
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet"> 
+  <div class="page-width">
+    <div class="grid">
+      <div class="grid__item medium-up--five-sixths medium-up--push-one-twelfth"> 
+        <div class="contact-form form-vertical">
+          <h2>Contact Form</h2>
+            <form name="contact-us"  method="post" action="">
+              
+                  <div class="grid grid--half-gutters" id="contact-us-1">
+                    <div class="container">
+                <div class="row">
+              <div class="col-12 col-md-6">
+                <label for="name">Name *</label>
+                <input type="text" name="name" value="" id="full-name">
+                <span id="name-error" style="display:none;">Please enter your Name</span>
+              </div>
+              <div class="col-12 col-md-6">
+                <label for="email">Email *</label>
+                <input type="text" name="email" value="" id="email-address" placeholder="example@gmail.com">
+                <span id="email-error" style="display:none;">Please enter your Email Address</span>
+                <span id="valid-email-error" style="display:none;">Please enter a proper Email Address, eg: example@gmail.com</span>
+              </div>
+              <div class="col-12 col-md-6">
+                <label for="phone">Contact Number *</label>
+                <input type="text" name="phone" value="" id="phone-no" maxlength="10">
+                <span id="phone-error" style="display:none;">Please enter your Contact Number</span>
+              </div>
+              <div class="col-12 col-md-6">
+                <label for="website">Website</label>
+                <input type="text" name="website" value="" id="website">
+              </div>
+              
+              <div class= "col-12  pad-left-rt-15">
+                <label for="message" id="msg">Message *</label>
+                <textarea rows="4" cols="50" name="message" value="" id="contact-message" maxlength="150"></textarea>
+                <span id="message-error" style="display:none;">Please enter a Message</span>
+              </div>
+              <input type="hidden" name="shop" value="" id="shop-hidden">
+              <div class="pad-left-rt-15">
+                <input type="button" value="Send" name="contact-submit" id="contact-form-submit-1">
+              </div>
+
+              <span class="success" style="display:none; padding-left: 245px;">You message send successfully</span>
+              <span class="failed" style="display:none; padding-left: 245px;">You message failed to send</span>
+                 </div>
+                </div>
+              </div>
+            </form>
+         
+        </div>
+      </div>  
+    </div>
+  </div>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  
+  <style>
+    .form-vertical input, .form-vertical select, .form-vertical .disclosure__toggle, .form-vertical textarea {
+      margin-bottom: 30px;
+    }
+    * {
+  box-sizing: border-box;
+}
+body{
+  font-family: Roboto, sans-serif;
+}
+.container {
+max-width: 1140px;
+padding: 0 15px;
+z-index: 2;
+position: relative;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.row{
+display:flex;
+flex-wrap:wrap;
+margin:0 -15px
+}
+[class*="col-"] {
+  float: left;
+  padding: 0 15px;
+ 
+}
+    
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+    .grid--half-gutters {
+    background-color: aliceblue;
+    width: 960px;
+    display: flex;
+    flex-wrap: wrap;
+    }
+    #contact-us-1 {
+        width: 100%;
+    padding-left: 35px;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    padding-right: 40px;
+    }
+    #msg{
+      padding-left: -1px;
+    }
+    .area-text{
+      padding-left: 29px;
+    }
+    #contact-form-submit-1{
+      width: 88px;
+        background-color: lightsteelblue;
+        text-align: center;
+      /* text-size-adjust: auto; */
+      font-size: 18px;
+        border-radius: 12px;
+        outline:none;
+    }
+    .half-grid{
+    width: 50%;
+    float: left;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+    .pad-left-rt-15{
+      padding-left:15px;
+      padding-right:15px;
+  }
+    input, textarea {
+    padding: 10px 18px;
+    border-radius: 10px;
+    }
+    #name-error{
+  display: block;
+    position: absolute!important;
+    top: 80px;
+    left: 18px;
+    color: red;
+}
+/*     .sub{
+      padding-left: 310px;
+        padding-top: 30px;
+    } */
+    .grid--half-gutters{
+      background-color: aliceblue;
+      width: 960px;
+    }
+    .grid__item{
+      padding-top:20px;
+        padding-bottom:20px;
+    }
+    @media (max-width: 767px){
+     .grid--half-gutters {
+    background-color: aliceblue;
+    width: auto;
+    max-width: 960px;
+   } 
+      [class*="col-"] {
+    width: 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+  }
+</style>
+  
+  
