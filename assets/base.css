@@ -2888,6 +2888,7 @@ details-disclosure > details {
 }
 
 
+/*
 /* TURNS THE PRODUCT THUMBNAILS/CAROUSEL VERTICAL */
 @media (min-width: 1024px) {
   .product--thumbnail_slider {
@@ -2915,3 +2916,4 @@ details-disclosure > details {
     width: 100%;
   }
 }
+*/
