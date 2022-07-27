@@ -36,10 +36,28 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
+    },
+    "16588966059c5d7b2f": {
+      "type": "apps",
+      "blocks": {
+        "efeff33f-26c1-4c3e-8ef6-84b5e8b9bb53": {
+          "type": "shopify:\/\/apps\/contact-form-contact-us-form\/blocks\/block-embed\/cceef8dd-a4f1-4344-962d-06bf0022ec0d",
+          "settings": {
+            "embed_code": "[storeify-formbuilder-8491]"
+          }
+        }
+      },
+      "block_order": [
+        "efeff33f-26c1-4c3e-8ef6-84b5e8b9bb53"
+      ],
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
     "main",
-    "165877737899eaf5dd"
+    "165877737899eaf5dd",
+    "16588966059c5d7b2f"
   ]
 }
