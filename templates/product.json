@@ -134,7 +134,7 @@
           "settings": {
             "heading": "Test 1",
             "icon": "recycle",
-            "row_content": "",
+            "row_content": "<p>{{ product.metafields.custom.podopis1 | metafield_tag }}<\/p>",
             "page": ""
           }
         },
@@ -143,7 +143,7 @@
           "settings": {
             "heading": "Vrsta 2",
             "icon": "eye",
-            "row_content": "",
+            "row_content": "<p>{{ product.metafields.custom.podopis2 | metafield_tag }}<\/p>",
             "page": ""
           }
         },
@@ -152,7 +152,7 @@
           "settings": {
             "heading": "Collapsible row",
             "icon": "check_mark",
-            "row_content": "",
+            "row_content": "<p>{{ product.metafields.custom.podopis3 | metafield_tag }}<\/p>",
             "page": ""
           }
         },
@@ -161,7 +161,7 @@
           "settings": {
             "heading": "Collapsible row",
             "icon": "shirt",
-            "row_content": "",
+            "row_content": "<p>{{ product.metafields.custom.podopis4 | metafield_tag }}<\/p>",
             "page": ""
           }
         }
