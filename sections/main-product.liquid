@@ -199,23 +199,14 @@
 
       
         {% comment %} TO JE DESCRIPTION PRODUCTA PREMAKNJEN POD SLIKO {% endcomment %}
-        {% comment %} TO JE BILO TU. RELATANO JE TO SOME FOR LOOP, PRESUMABLY. AMPAK NE ZNAM USPOSOBIT, ZATO JE COMMENTED {%- when 'description' -%}
+        {% comment %} TO JE BILO TU. RELATANO JE TO SOME FOR LOOP, PRESUMABLY. AMPAK NE ZNAM USPOSOBIT, ZATO JE COMMENTED {%- when 'description' -%}{% endcomment %}
           {%- if product.description != blank -%}
             <div class="product__description rte quick-add-hidden">
               {{ product.description }}
             </div>
-          {%- endif -%}{% endcomment %}
-      {%- for block in product.media -%}
-        {%- case block.type -%}
-        {% comment %} TO JE DESCRIPTION PRODUCTA PREMAKNJEN POD SLIKO {% endcomment %}
-          {%- when 'description' -%}
-            {%- if product.description != blank -%}
-              <div class="product__description rte quick-add-hidden">
-                {{ product.description }}
-              </div>
-            {%- endif -%}
-        {% endcase %}
-      {%- endfor -%}
+          {%- endif -%}
+        
+        
             
       </media-gallery>
     </div>
