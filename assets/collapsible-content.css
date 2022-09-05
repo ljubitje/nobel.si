@@ -45,7 +45,7 @@
   padding-left: 1.5rem;
   /*max-width: var(--page-width);*/
   max-width: 114rem;
-  /*--page-width je page_width/10 (theme.liquid ln90), page_width je 1200 (settings_data.json ln18); kako sem prišla do 114? trial and error*/
+  /*--page-width je page_width/10 (theme.liquid ln90), page_width je 1200 (settings_data.json ln18); kako sem prišla do 114? trial and error -nin*/
 }
 
 .collapsible-content__header {
