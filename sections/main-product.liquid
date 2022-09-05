@@ -468,7 +468,21 @@
                   </div>
                 {%- endform -%}
               </product-form>
-
+{% for variant in product.variants %}
+                {% if product.selected_or_first_available_variant.id == variant.id %}
+                    #{{ variant.sku }}
+                {% endif %}
+              {% endfor %}
+  
+              {% comment %} spodaj koda ki refresha page po kliku, da se sku updata z selectanim variantom{% endcomment %}
+              <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+              <script type="text/javascript">
+                jQuery(document).ready(function($){
+                  $(".no-js-hidden").on("click", function(){
+                    var refreshint = setInterval(function(){location.reload();},500);
+                  });
+                });
+              </script>
               {{ 'component-pickup-availability.css' | asset_url | stylesheet_tag }}
 
               {%- assign pick_up_availabilities = product.selected_or_first_available_variant.store_availabilities | where: 'pick_up_enabled', true -%}
@@ -492,27 +506,6 @@
             </div>
 
             <script src="{{ 'pickup-availability.js' | asset_url }}" defer="defer"></script>
-
-
-
-{% for variant in product.variants %}
-                {% if product.selected_or_first_available_variant.id == variant.id %}
-                    #{{ variant.sku }}
-                {% endif %}
-              {% endfor %}
-  
-              {% comment %} spodaj koda ki refresha page po kliku, da se sku updata z selectanim variantom{% endcomment %}
-              <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-              <script type="text/javascript">
-                jQuery(document).ready(function($){
-                  $(".no-js-hidden").on("click", function(){
-                    var refreshint = setInterval(function(){location.reload();},500);
-                  });
-                });
-              </script>
-
-
-                      
           {%- when 'rating' -%}
             {%- if product.metafields.reviews.rating.value != blank -%}
               {% liquid
