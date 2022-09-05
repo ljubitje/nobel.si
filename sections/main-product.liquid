@@ -197,7 +197,7 @@
           </slider-component>
         {%- endif -%}
 
-      
+
         {% comment %} TO JE DESCRIPTION PRODUCTA PREMAKNJEN POD SLIKO {% endcomment %}
         {% comment %} TO JE BILO TU. RELATANO JE TO SOME FOR LOOP, PRESUMABLY. AMPAK NE ZNAM USPOSOBIT, ZATO JE COMMENTED {%- when 'description' -%}{% endcomment %}
           {%- if product.description != blank -%}
@@ -205,8 +205,7 @@
               {{ product.description }}
             </div>
           {%- endif -%}
-        
-        
+
             
       </media-gallery>
     </div>
@@ -263,8 +262,7 @@
             {%- endif -%}
           {% endcomment %}
 
-          
-       
+            
           {%- when 'custom_liquid' -%}
             {{ block.settings.custom_liquid }}
           {%- when 'collapsible_tab' -%}
@@ -352,8 +350,6 @@
               </details>
             </share-button>
             <script src="{{ 'share.js' | asset_url }}" defer="defer"></script>
-
-            
           {%- when 'variant_picker' -%}
             {%- unless product.has_only_default_variant -%}
               {%- if block.settings.picker_type == 'button' -%}
@@ -518,11 +514,6 @@
               </p>
             {%- endif -%}
           {%- endcase -%}
-
-                      
-  {% comment %}--------------this is where collapsible-content should be pasted (2/2)-------------------------------------------{% endcomment %}
-
-                      
         {%- endfor -%}
         <a href="{{ product.url }}" class="link product__view-details animate-arrow">
           {{ 'products.product.view_full_details' | t }}

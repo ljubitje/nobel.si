@@ -39,11 +39,12 @@
   }
 }
 
-.collapsible-content-wrapper-narrow { 
+.collapsible-content-wrapper-narrow {
   margin: 0 auto;
   padding-right: 1.5rem;
   padding-left: 1.5rem;
-  /*max-width: var(--page-width);*/
+  /* ORIGINAL VALUE */
+  /*max-width: 73.4rem;*/
   max-width: 114rem;
   /*--page-width je page_width/10 (theme.liquid ln90), page_width je 1200 (settings_data.json ln18); kako sem prišla do 114? trial and error -nin*/
 }
