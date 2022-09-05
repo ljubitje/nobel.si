@@ -45,7 +45,7 @@
   padding-left: 1.5rem;
   /*max-width: var(--page-width);*/
   max-width: 114rem;
-  /*page_width je 1200, --page-width je page_width/10, parent tega je .page-width--narrow ki pa je 73.4rem for some reason*/
+  /*--page-width je page_width/10 (theme.liquid ln90), page_width je 1200 (settings_data.json)*/
 }
 
 .collapsible-content__header {
