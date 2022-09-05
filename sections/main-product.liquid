@@ -350,6 +350,10 @@
               </details>
             </share-button>
             <script src="{{ 'share.js' | asset_url }}" defer="defer"></script>
+
+  {% comment %}--------------this is where collapsible-content should be pasted (1/2)-------------------------------------------{% endcomment %}
+
+            
           {%- when 'variant_picker' -%}
             {%- unless product.has_only_default_variant -%}
               {%- if block.settings.picker_type == 'button' -%}
@@ -514,6 +518,11 @@
               </p>
             {%- endif -%}
           {%- endcase -%}
+
+                      
+  {% comment %}--------------this is where collapsible-content should be pasted (2/2)-------------------------------------------{% endcomment %}
+
+                      
         {%- endfor -%}
         <a href="{{ product.url }}" class="link product__view-details animate-arrow">
           {{ 'products.product.view_full_details' | t }}
