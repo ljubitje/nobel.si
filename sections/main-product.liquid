@@ -224,15 +224,10 @@
           {%- when 'title' -%}
             <div class="product__title" {{ block.shopify_attributes }}>
               <h1>{{ product.title | escape }}</h1>
-              <a href="{{ product.url }}" class="product__title">
-                <h2 class="h1">
-                  {{ product.title | escape }} 
-                </h2>
-              </a>
-            
-                  {% for variant in product.variants %}
+
+     {% for variant in product.variants %}
                       {% if product.selected_or_first_available_variant.id == variant.id %}
-                          SKU: {{ variant.sku }}
+                          <strong>SKU: {{ variant.sku }} </strong>
                       {% endif %}
                     {% endfor %}
               <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -243,6 +238,14 @@
                           location.reload();
                         }, 1000);    });   });
               </script>
+            
+              <a href="{{ product.url }}" class="product__title">
+                <h2 class="h1">
+                  {{ product.title | escape }} 
+                </h2>
+              </a>
+            
+             
             
             </div>
           {%- when 'price' -%}
