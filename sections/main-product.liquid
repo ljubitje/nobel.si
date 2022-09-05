@@ -230,14 +230,15 @@
                   {{ product.title | escape }} 
                 </h2>
               </a>
-            
-            {% for variant in product.variants %}
-              {% if product.selected_or_first_available_variant.id == variant.id %}
-                  #{{ variant.sku }}
-              {% endif %}
-            {% endfor %}
 
-            {% comment %} spodaj koda ki refresha page po kliku, da se sku updata z selectanim variantom{% endcomment %}
+            
+              {% for variant in product.variants %}
+                {% if product.selected_or_first_available_variant.id == variant.id %}
+                    #{{ variant.sku }}
+                {% endif %}
+              {% endfor %}
+  
+              {% comment %} spodaj koda ki refresha page po kliku, da se sku updata z selectanim variantom{% endcomment %}
               <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
               <script type="text/javascript">
                 jQuery(document).ready(function($){
@@ -246,6 +247,8 @@
                   });
                 });
               </script>
+
+            
             </div>
           {%- when 'price' -%}
             <div class="no-js-hidden" id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
