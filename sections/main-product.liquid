@@ -226,10 +226,13 @@
               <h1>{{ product.title | escape }}</h1>
               <a href="{{ product.url }}" class="product__title">
                 <h2 class="h1">
-                  {{ product.title | escape }}
+                  {{ product.title | escape }} 
+                </h2>
+
+              <h2>
                     {% assign current_variant = product.selected_or_first_available_variant %}
                     <span class="variant-sku">{{ current_variant.sku }}</span>
-                </h2>
+              </h2>
               </a>
             </div>
           {%- when 'price' -%}
