@@ -231,20 +231,20 @@
                 </h2>
               </a>
             
-             {% for variant in product.variants %}
-                      {% if product.selected_or_first_available_variant.id == variant.id %}
-                          #{{ variant.sku }}  {% comment %} ---tukaj spreminjaš kako hočeš za je styled {% endcomment %}
-                      {% endif %}
-                    {% endfor %}
+            {% for variant in product.variants %}
+              {% if product.selected_or_first_available_variant.id == variant.id %}
+                  #{{ variant.sku }}
+              {% endif %}
+            {% endfor %}
 
             {% comment %} spodaj koda ki refresha page po kliku, da se sku updata z selectanim variantom{% endcomment %}
               <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
               <script type="text/javascript">
-                    jQuery(document).ready(function($){
-                      $(".no-js-hidden").on("click", function(){
-                        var refreshint = setInterval(function(){
-                          location.reload();
-                        }, 1000);    });   });
+                jQuery(document).ready(function($){
+                  $(".no-js-hidden").on("click", function(){
+                    var refreshint = setInterval(function(){location.reload();},500);
+                  })
+                ;});
               </script>           
             </div>
           {%- when 'price' -%}
