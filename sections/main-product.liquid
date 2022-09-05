@@ -197,15 +197,25 @@
           </slider-component>
         {%- endif -%}
 
-
+      {%- for block in product.media -%}
+        {%- case block.type -%}
         {% comment %} TO JE DESCRIPTION PRODUCTA PREMAKNJEN POD SLIKO {% endcomment %}
-        {% comment %} TO JE BILO TU. RELATANO JE TO SOME FOR LOOP, PRESUMABLY. AMPAK NE ZNAM USPOSOBIT, ZATO JE COMMENTED {%- when 'description' -%}{% endcomment %}
+        {% comment %} TO JE BILO TU. RELATANO JE TO SOME FOR LOOP, PRESUMABLY. AMPAK NE ZNAM USPOSOBIT, ZATO JE COMMENTED {%- when 'description' -%}
+          {%- if product.description != blank -%}
+            <div class="product__description rte quick-add-hidden">
+              {{ product.description }}
+            </div>
+          {%- endif -%}{% endcomment %}
+        
+        {% comment %} TO JE DESCRIPTION PRODUCTA PREMAKNJEN POD SLIKO {% endcomment %}
+        {%- when 'description' -%}
           {%- if product.description != blank -%}
             <div class="product__description rte quick-add-hidden">
               {{ product.description }}
             </div>
           {%- endif -%}
-
+        {% endcase %}
+      {%- endfor -%}
             
       </media-gallery>
     </div>
@@ -350,8 +360,6 @@
               </details>
             </share-button>
             <script src="{{ 'share.js' | asset_url }}" defer="defer"></script>
-
-  {% comment %}--------------this is where collapsible-content should be pasted (1/2)-------------------------------------------{% endcomment %}
 
             
           {%- when 'variant_picker' -%}
