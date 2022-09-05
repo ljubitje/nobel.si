@@ -230,6 +230,7 @@
                   {{ product.title | escape }} 
                 </h2>
               </a>
+            
             </div>
           {%- when 'price' -%}
             <div class="no-js-hidden" id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
@@ -462,12 +463,11 @@
                           </svg>
                         </div>
                     </button>
+                  
                     {%- if block.settings.show_dynamic_checkout -%}
                       {{ form | payment_button }}
                     {%- endif -%}
-                  </div>
-                {%- endform -%}
-              </product-form>
+
 {% for variant in product.variants %}
                 {% if product.selected_or_first_available_variant.id == variant.id %}
                     #{{ variant.sku }}
@@ -483,6 +483,12 @@
                   });
                 });
               </script>
+
+                  
+                  </div>
+                {%- endform -%}
+              </product-form>
+
               {{ 'component-pickup-availability.css' | asset_url | stylesheet_tag }}
 
               {%- assign pick_up_availabilities = product.selected_or_first_available_variant.store_availabilities | where: 'pick_up_enabled', true -%}
