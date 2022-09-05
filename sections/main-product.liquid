@@ -233,7 +233,7 @@
             
              {% for variant in product.variants %}
                       {% if product.selected_or_first_available_variant.id == variant.id %}
-                          <strong>SKU: {{ variant.sku }} </strong>  {% comment %} ---tukaj spreminjaš kako hočeš za je styled {% endcomment %}
+                          #{{ variant.sku }}  {% comment %} ---tukaj spreminjaš kako hočeš za je styled {% endcomment %}
                       {% endif %}
                     {% endfor %}
 
