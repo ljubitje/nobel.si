@@ -227,6 +227,8 @@
               <a href="{{ product.url }}" class="product__title">
                 <h2 class="h1">
                   {{ product.title | escape }}
+                    {% assign current_variant = product.selected_or_first_available_variant %}
+                    <span class="variant-sku">{{ current_variant.sku }}</span>
                 </h2>
               </a>
             </div>
