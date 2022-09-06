@@ -1,5 +1,5 @@
 {{ 'section-contact-form.css' | asset_url | stylesheet_tag }}
-{% comment %}
+
 {%- style -%}
   .section-{{ section.id }}-padding {
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
@@ -184,6 +184,6 @@
   ]
 }
 {% endschema %}
-{% endcomment %}
 
-<div class="storeify-formbuilder-view" id="storeify-formbuilder-view-8491"></div>
+
+{% comment %}<div class="storeify-formbuilder-view" id="storeify-formbuilder-view-8491"></div>{% endcomment %}
