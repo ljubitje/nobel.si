@@ -1,3 +1,3 @@
 # nobel.si
-this is theme code for nobel.si Shopify shop
+this is the theme code for (unpublished) nobel.si Shopify shop
 please read the LICENSE
