@@ -1,2 +1,2 @@
 # nobel.si
-this is the theme code for (unpublished) nobel.si Shopify shop
+this is the theme code for nobel.si Shopify shop
